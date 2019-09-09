@@ -1,0 +1,23 @@
+{
+    "name" : "wifi-ism43362-mbed-os5",
+    "description" : "Drivers for the ism43362 to expose through MBedOS5 WifiInterface.",
+    "keywords" : ["ism43362, wifi, mbed os"],
+    "frameworks" : ["mbed"],
+    "platforms" : ["ststm32"],
+    "authors" : [
+	{
+	    "name" : "Brian Block",
+	    "email" : "Brian.Block@dieboldnixdorf.com"
+	}
+    ],
+    "build" : {
+	"srcDir" : "./",
+	"includeDir" : "./",
+	"flags" : [
+	    "-I ISM43362/",
+	    "-I ISM43362/ATParser",
+	    "-I ISM43362/ATParser/BufferedSpi",
+	    "-I ISM43362/ATParser/BufferedSpi/Buffer"
+	]
+    }
+}
